@@ -6,23 +6,28 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
     <style>
       .header {
-        height: 100px;
-        width: 100%;
         position: fixed;
-        background-color: #f3f3f3;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 999;
         top: 0;
-        margin-top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        background-color: #f3f3f3;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 999;
       }
-      .headerImage {
-        height: 92%;
-        margin-top: 4%;
+
+      .headerImage img {
+        max-height: 80px;
         width: auto;
-        text-align: center;
       }
-      .headerText {
-        text-align: center;
+
+      .headerText h1 {
+        margin: 0;
+        font-size: 1.5rem;
       }
     </style>
   </head>
