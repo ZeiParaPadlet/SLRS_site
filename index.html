@@ -30,6 +30,26 @@
         margin: 0;
         font-size: 4rem;
       }
+
+      .headerMenu {
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+
+      .headerMenu {
+        margin-top: 0px;
+        margin-left: 0px;
+        style: none;
+      }
+
+      .menu {
+        position: flex;
+        left: 0;
+        style: none;
+        width: 30%;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        background-color: #f3f3f3;
+      }
     </style>
   </head>
   <body>
@@ -40,6 +60,29 @@
       <div class="headerText">
         <h1>SLRS</h1>
       </div>
+      <div class="headerMenu">
+        <span onclick="menu()">
+          <img src="https://slrs.f5.si/menu.svg">
+        </span>
+      </div>
+      <div class="headerCancel">
+        <span onclick="cancel()"><img src="https://slre.f5.si/cancel.svg"></span>
+      </div>
     </div>
+    <div class="menu">
+      <aside>
+        <a href="https://">test</a>
+      </aside>
+    </div>
+    <script>
+      function menu() {
+        const menu = document.getElementById("menu");
+        const menuButton = document.getElementById("headerMenu");
+        const cancelButton = document.getElementById("headerCancel");
+        menuButton.style.display = "block";
+        cancelButton.style.display = "none";
+        menu.style.display = "block";
+      }
+    </script>
   </body>
 </html>
